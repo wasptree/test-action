@@ -42,7 +42,8 @@ jobs:
           
         - name: show folder
           run: |
-            ls -lar
+            pwd
+            ls -laR
 
         - name: pipeline-scan action step
           id: pipelien-scan
