@@ -39,6 +39,10 @@ jobs:
       
         - name: checkout
           uses: actions/checkout@v2
+          
+        - name: show folder
+          run: |
+            ls -lar
 
         - name: pipeline-scan action step
           id: pipelien-scan
