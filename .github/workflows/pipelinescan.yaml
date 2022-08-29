@@ -48,7 +48,7 @@ jobs:
           with:
             vid: ${{ secrets.VID }}
             vkey: ${{ secrets.VKEY }}
-            file: "test-action/tmp/verademo.war" 
+            file: "verademo.war" 
             request_policy: "VeraDemo Policy"
             store_baseline_file: true
             store_baseline_file_branch: "feature-123"
