@@ -44,7 +44,7 @@ jobs:
 
         - name: pipeline-scan action step
           id: pipelien-scan
-          uses: julz0815/Veracode-pipeline-scan-action@beta-0.2
+          uses: julz0815/Veracode-pipeline-scan-action@beta-0.3
           with:
             vid: ${{ secrets.VID }}
             vkey: ${{ secrets.VKEY }}
@@ -56,8 +56,3 @@ jobs:
             debug: 1
             fail_build: true
             
-        - name: save filtered results
-          uses: actions/upload-artifact@v1
-          with:
-            name: filtered-results
-            path: filtered_results.json
