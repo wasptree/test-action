@@ -39,8 +39,7 @@ jobs:
           
         - name: show folder
           run: |
-            pwd
-            ls -laR
+            env
 
         - name: pipeline-scan action step
           id: pipelien-scan
