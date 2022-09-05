@@ -31,9 +31,6 @@ jobs:
       name: pipeline scan
 
       steps:
-        - name: checkout
-          uses: actions/checkout@v2
-
         - name: get archive
           uses: actions/download-artifact@v2
           with:
