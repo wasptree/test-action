@@ -31,7 +31,9 @@ jobs:
       name: pipeline scan
 
       steps:
-
+        - name: checkout repo
+          uses: actions/checkout@v2
+          
         - name: get archive
           uses: actions/download-artifact@v2
           with:
@@ -39,12 +41,11 @@ jobs:
           
         - name: show folder
           run: |
-            pwd
-            ls -laR
+            env
 
         - name: pipeline-scan action step
           id: pipelien-scan
-          uses: julz0815/Veracode-pipeline-scan-action@beta-0.6
+          uses: julz0815/Veracode-pipeline-scan-action@beta-0.13
           with:
             vid: ${{ secrets.VID }}
             vkey: ${{ secrets.VKEY }}
