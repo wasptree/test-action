@@ -45,6 +45,7 @@ jobs:
         
 
   pipeline_scan:
+      environment: Test
       needs: build
       runs-on: ubuntu-latest
       name: pipeline scan
