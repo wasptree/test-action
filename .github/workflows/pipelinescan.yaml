@@ -65,7 +65,7 @@ jobs:
 
         - name: pipeline-scan action step
           id: pipelien-scan
-          uses: wasptree/Veracode-pipeline-scan-action@beta-0.4a
+          uses: wasptree/Veracode-pipeline-scan-action@beta-0.5a
           with:
             vid: ${{ secrets.VID }}
             vkey: ${{ secrets.VKEY }}
